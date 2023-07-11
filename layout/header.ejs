@@ -1,4 +1,47 @@
-<h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<header class="py-3">
+  <div class="container d-flex position-relative">
+
+    <div><h1 class="serif d-none">7TAO
+      <span class="fs-6">活動訂票網</span>
+    </h1></div>
+    <div class="btn-group">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="探索活動"
+        aria-label="Input group example"
+        aria-describedby="btnGroupAddon"
+      />
+      <button type="button" class="btn btn-primary"><i class="icofont-search-1"></i></button>
+    </div>
+
+    <nav>
+      <button
+        class="rounded border border-1 border-primary ms-6 px-3 py-1 bg-transparent"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseNavbar"
+        aria-controls="collapseNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M4 16h24M4 8h24M4 24h24"
+            stroke="#000"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+      </button>
+
+      <div class="position-absolute navbar-custom">
+        <ul class="collapse list-unstyled" id="collapseNavbar">
+        <li><a href="#"><i class="icofont-ui-file me-1"></i>REGISTER</a></li>
+        <li><a href="#"><i class="icofont-ui-user me-1"></i>LOGIN</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
