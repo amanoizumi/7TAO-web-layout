@@ -1,6 +1,11 @@
 .index {
   &-banner {
     height: 350px;
+    padding-top: 16px;
+    padding-right: 40px;
+    padding-bottom: 24px;
+    padding-left: 40px;
+
     background-image: url('/assets/images/event/13.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,13 +17,183 @@
     }
 
     .banner-date {
-      font-size: 60px;
-      line-height: 69px;
-      font-weight: 700;
+      font-size: 32px;
+      line-height: 37px;
+
+      @include media-breakpoint-up(md) {
+        font-size: 60px;
+        line-height: 69px;
+      }
     }
     .banner-title {
+      font-size: 18px;
+      line-height: 26px;
+      @include media-breakpoint-up(md) {
+        font-size: 24px;
+        line-height: 34px;
+      }
+    }
+  }
+
+  &-categories {
+    .categories-link {
+      border: 2px solid black;
+      padding: 20px;
+    }
+    .categories-icon {
+      width: 40px;
+      height: 40px;
+      @include media-breakpoint-up(md) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    .categories-title {
+      font-size: 16px;
+
+      @include media-breakpoint-up(md) {
+        font-size: 24px;
+      }
+    }
+    .more {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-size: 24px;
-      line-height: 34px;
+      background-color: $primary;
+    }
+  }
+
+  &-recent {
+    .title {
+      border: 2px solid $primary;
+      padding: 16px 12px;
+
+      @include media-breakpoint-up(md) {
+        border: 3px solid $primary;
+      }
+
+      &-en {
+        font-size: 24px;
+        line-height: 28px;
+
+        @include media-breakpoint-up(md) {
+          font-size: 64px;
+          line-height: 74px;
+        }
+      }
+      &-tw {
+        font-weight: 700;
+        @include media-breakpoint-up(md) {
+          font-size: 32px;
+          line-height: 46px;
+        }
+      }
+    }
+    .recent-card {
+      &-title {
+        font-size: 18px;
+        line-height: 26px;
+        @include media-breakpoint-up(md) {
+          font-size: 24px;
+          line-height: 34px;
+        }
+      }
+      &-text {
+        text-align: justify;
+      }
+      .image {
+        height: 210px;
+        object-fit: cover;
+        @include media-breakpoint-up(md) {
+          height: 255px;
+        }
+      }
+      .date {
+        font-size: 32px;
+        line-height: 37px;
+        border-bottom: 3px solid $primary;
+
+        @include media-breakpoint-up(md) {
+          font-size: 48px;
+          line-height: 56px;
+        }
+
+        @include media-breakpoint-up(lg) {
+          min-height: 131px;
+        }
+        @include media-breakpoint-up(xl) {
+          min-height: auto;
+        }
+      }
+      .icon {
+        width: 20px;
+        height: 20px;
+        @include media-breakpoint-up(md) {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .tag {
+        font-weight: 700;
+        &:hover {
+          text-decoration: underline;
+          text-underline-offset: 3px;
+        }
+      }
+      .sell-btn {
+        position: relative;
+        font-weight: 700;
+        z-index: 0;
+        &:hover {
+          &::after {
+            content: '';
+            border-radius: 50%;
+            position: absolute;
+            top: -3px;
+            left: -8px;
+            z-index: -1;
+            width: 30px;
+            height: 30px;
+            background: $secondary;
+          }
+        }
+      }
+    }
+  }
+
+  &-online {
+    .title {
+      border: 2px solid $primary;
+      padding: 16px 12px;
+
+      @include media-breakpoint-up(md) {
+        border: 3px solid $primary;
+      }
+
+      &-en {
+        font-size: 24px;
+        line-height: 28px;
+
+        @include media-breakpoint-up(md) {
+          font-size: 64px;
+          line-height: 74px;
+        }
+      }
+      &-tw {
+        font-weight: 700;
+        @include media-breakpoint-up(md) {
+          font-size: 32px;
+          line-height: 46px;
+        }
+      }
+    }
+    .image {
+      background-image: url('/assets/images/event/online.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0% 30%;
+      height: 158px;
     }
   }
 }
