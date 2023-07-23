@@ -4,5 +4,15 @@ $utilities: (
     property: position,
     values: static relative absolute fixed sticky,
   ),
-  
+  "text-align": (
+    responsive: true,
+    property: text-align,
+    class: text,
+    values: (
+      start: left,
+      end: right,
+      center: center,
+      justify: justify,
+    )
+  ),
 );
