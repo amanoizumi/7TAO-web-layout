@@ -1,0 +1,17 @@
+.title {
+  &-en {
+    font-size: 24px;
+    line-height: 28px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 64px;
+      line-height: 74px;
+    }
+  }
+  &-tw {
+    @include media-breakpoint-up(md) {
+      font-size: 32px;
+      line-height: 46px;
+    }
+  }
+}

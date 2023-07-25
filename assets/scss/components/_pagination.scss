@@ -1,0 +1,13 @@
+.page-link {
+  background-color: transparent;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: $primary;
+    color: $secondary;
+  }
+}
