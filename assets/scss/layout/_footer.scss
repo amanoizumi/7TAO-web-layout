@@ -1,4 +1,6 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer {
+  font-size: 14px;
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
 }

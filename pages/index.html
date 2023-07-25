@@ -303,8 +303,8 @@
           </div>
         </div>
         <div class="container py-15">
-          <ul class="row list-unstyled mb-0">
-            <li class="col-3">
+          <ul class="row list-unstyled mb-0 flex-column flex-md-row align-items-center gy-10">
+            <li class="col-lg-3 col-md-6 col-10">
               <div class="card p-4 border-2 border-primary bg-transparent position-relative">
                 <p class="category serif bg-white py-2 px-4 text-center position-absolute top-0 start-50">
                   社群活動
@@ -313,7 +313,7 @@
                 <h3 class="title serif">無聲派對-閉閉嘴dancing</h3>
               </div>
             </li>
-            <li class="col-3">
+            <li class="col-lg-3 col-md-6 col-10">
               <div class="card p-4 border-2 border-primary bg-transparent position-relative -rotate-2">
                 <p class="category serif bg-white py-2 px-4 text-center position-absolute top-0 start-50">
                   藝文活動
@@ -322,7 +322,7 @@
                 <h3 class="title serif">拯救老店大作戰</h3>
               </div>
             </li>
-            <li class="col-3">
+            <li class="col-lg-3 col-md-6 col-10">
               <div class="card p-4 border-2 border-primary bg-transparent position-relative rotate-2">
                 <p class="category serif bg-white py-2 px-4 text-center position-absolute top-0 start-50">
                   自我覺察
@@ -331,7 +331,7 @@
                 <h3 class="title serif">內觀修行-部落篇</h3>
               </div>
             </li>
-            <li class="col-3">
+            <li class="col-lg-3 col-md-6 col-10">
               <div class="card p-4 border-2 border-primary bg-transparent position-relative -rotate-2">
                 <p class="category serif bg-white py-2 px-4 text-center position-absolute top-0 start-50">
                   聯誼活動
@@ -354,8 +354,77 @@
           </div>
         </div>
       </div>
-
-      
+      <!-- follow & subscribe -->
+      <div class="index-follow container py-mb-15 pt-8 pb-12">
+        <!-- follow -->
+        <div class="d-flex flex-column flex-md-row">
+          <div class="col-12 col-md-6 border border-2 border-black border-end-md-0 mb-6 mb-md-0">
+            <h3 class="title serif py-md-4 px-md-8 px-3 py-4 border-black border-bottom">#FOLLOW US</h3>
+            <div class="p-md-8 py-4 px-3 d-flex flex-column">
+              <p class="mb-4 mb-md-8">
+                想第一時間獲得新奇有趣的活動資訊？ <br />追蹤我們的社群吧！<br />
+                也歡迎你聯繫我們，提供好玩有趣的活動企劃。
+              </p>
+              <ul class="list-unstyled mb-0">
+                <li class="d-flex mb-4 align-items-center">
+                  <div
+                    class="icon bg-primary text-white d-flex justify-content-center align-items-center me-4"
+                  >
+                    <i class="icofont-ui-email"></i>
+                  </div>
+                  <a class="sans" href="#">7tao.event@gmail.com</a>
+                </li>
+                <li class="d-flex mb-4 align-items-center">
+                  <div
+                    class="icon bg-primary text-white d-flex justify-content-center align-items-center me-4"
+                  >
+                    <i class="icofont-phone"></i>
+                  </div>
+                  <a class="sans" href="#">09123123123</a>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div
+                    class="icon bg-primary text-white d-flex justify-content-center align-items-center me-4"
+                  >
+                    <i class="icofont-facebook"></i>
+                  </div>
+                  <a class="sans" href="#">7TAO七逃</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- subscribe -->
+          <div class="col-12 col-md-6 border border-2 border-black d-flex flex-column">
+            <h3 class="title serif py-md-4 px-md-8 px-3 py-4 border-black border-bottom">#SUBSCRIBE US</h3>
+            <div class="p-md-8 py-4 px-3 flex-grow-1">
+              <p class="mb-4">
+                訂閱電子報送折價券！<br />
+                定期精選文章資訊及最新優惠資訊，<br />
+                還不通通給我訂閱起來？
+              </p>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control sans"
+                  id="subscribeEmailInput"
+                  placeholder="輸入Email"
+                />
+                <label for="subscribeEmailInput" class="sans">輸入Email</label>
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary d-flex align-items-center text-center justify-content-center"
+              >確認訂閱<i class="icofont-double-right fw-bold ms-1 fs-7"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- slogan -->
+      <div class="index-slogan serif text-center border-bottom border-top border-primary border-3 py-12 py-md-15">
+        <div class="container">
+          <h2 class="title mb-3 mb-md-4">此刻打盹，你將做夢；此刻學習，你將圓夢</h2>
+          <p class="title-sub">——我也不知道誰說的</p>
+        </div>
+      </div>
     </main>
 
     <%- include('./layout/footer'); -%>

@@ -166,7 +166,7 @@
       height: 158px;
 
       @include media-breakpoint-up(md) {
-        height: 317px;
+        height: 100%;
       }
     }
   }
@@ -182,15 +182,45 @@
     .category {
       font-size: 16px;
       transform: translate(-50%, -50%) rotate(-4deg);
-
     }
     .pic {
-      width: 274px;
+      width: 100%;
       height: 274px;
       object-fit: cover;
+      @include media-breakpoint-up(md) {
+        height: 267px;
+      }
     }
     .title {
       font-size: 18px;
+    }
+  }
+
+  &-follow {
+    .title {
+      font-size: 24px;
+      @include media-breakpoint-up(md) {
+        font-size: 32px;
+      }
+    }
+    .icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &-slogan {
+    .title {
+      font-size: 18px;
+      @include media-breakpoint-up(md) {
+        font-size: 32px;
+      }
+      &-sub {
+        font-size: 14px;
+        @include media-breakpoint-up(md) {
+          font-size: 18px;
+        }
+      }
     }
   }
 }
