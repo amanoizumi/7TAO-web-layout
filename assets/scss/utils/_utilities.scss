@@ -4,7 +4,7 @@ $utilities: (
     property: position,
     values: static relative absolute fixed sticky,
   ),
-  "text-align": (
+  'text-align': (
     responsive: true,
     property: text-align,
     class: text,
@@ -13,6 +13,14 @@ $utilities: (
       end: right,
       center: center,
       justify: justify,
-    )
+    ),
   ),
 );
+
+.rotate-2 {
+  transform: rotate(2deg)
+}
+
+.-rotate-2 {
+  transform: rotate(-2deg)
+}
