@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/icofont/icofont.min.css" />
+    <title>會員登入</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main class="min-vh-100">
+      <div class="container pt-6 pb-12 py-md-15">
+        <div class="row">
+          <div class="col-12 col-lg-6 mx-lg-auto">
+            <!-- 訂單內容 -->
+            <h2 class="serif d-flex flex-column align-items-center form-title mb-4">
+              <img class="sparkler mb-4" src="../assets/images/sparkler.png" alt="icon" />
+              會員登入
+            </h2>
+
+            <form>
+              <div class="d-flex flex-column gap-4 mb-md-8 mb-6">
+                <div>
+                  <label for="account" class="form-label">帳號</label>
+                  <input
+                    type="text"
+                    class="form-control fs-5"
+                    id="account"
+                    placeholder="請輸入帳號"
+                    aria-describedby="account"
+                  />
+                </div>
+                <div>
+                  <label for="password" class="form-label">密碼</label>
+                  <input
+                    type="password"
+                    class="form-control fs-5"
+                    id="password"
+                    placeholder="請輸入密碼"
+                    aria-describedby="password"
+                  />
+                </div>
+              </div>
+              <a
+                href="#"
+                class="sans btn btn-primary d-flex align-items-center text-center justify-content-center fs-5"
+              >
+               登入<i class="icofont-double-right fw-bold ms-1 fs-7"></i>
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
