@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/icofont/icofont.min.css" />
+    <title>結帳完成</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main class="payment-success">
+      <div class="container pt-6 pb-12 py-md-15">
+        <div class="row">
+          <div class="col-12 col-lg-6 mx-lg-auto">
+            <!-- 進度條 -->
+            <ol class="list-unstyled stepprogress mb-8 mb-md-12">
+              <li class="stepprogress-item">
+                <div class="stepprogress-number active">
+                  <i class="icofont-verification-check"></i>
+                </div>
+                <p class="serif">訂單確認</p>
+              </li>
+              <li class="stepprogress-item">
+                <div class="stepprogress-number active">
+                  <i class="icofont-verification-check"></i>
+                </div>
+                <p class="serif">結帳付款</p>
+              </li>
+              <li class="stepprogress-item">
+                <div class="stepprogress-number active">3</div>
+                <p class="serif">訂購結果</p>
+              </li>
+            </ol>
+            <!-- 訂單內容 -->
+            <h2 class="d-flex flex-column align-items-center title serif mb-8 text-lg-center">
+              <i class="success-icon icofont-check-circled mb-4"></i>訂購成功
+            </h2>
+
+            <table class="table table-hover border-2 border-top border-primary mb-md-2 mb-4">
+              <tbody>
+                <tr>
+                  <th class="serif py-2">訂單編號</th>
+                  <td class="text-end sans py-2">892746123</td>
+                </tr>
+                <tr>
+                  <th class="serif py-2">訂購時間</th>
+                  <td class="text-end sans py-2">2023/04/28 14:30</td>
+                </tr>
+                <tr>
+                  <th class="serif py-2">票券</th>
+                  <td class="text-end sans py-2">改頭換面票（含大改造）$8000</td>
+                </tr>
+                <tr>
+                  <th class="serif py-2">取票序號</th>
+                  <td class="text-warning text-end sans py-2">95G54J4434</td>
+                </tr>
+                <tr>
+                  <th class="serif py-2">取票號碼</th>
+                  <td class="text-warning text-end sans py-2">04597101</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- 說明 -->
+            <p class="text-dark-gray sans">
+              請至 7-Eleven 完成取票，請於 ibon
+              點選【購票/取票/訂房】>【售票系統】>【取票】>【拓元售票系統】。<br/>
+              若您未前往取票，本筆交易仍視為完成，不可取消訂單。<br/>若需退票，請按照退票辦法進行申請。
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

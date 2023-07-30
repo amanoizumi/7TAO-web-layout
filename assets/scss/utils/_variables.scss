@@ -304,11 +304,13 @@ $primary: #030303 !default; // *custom
 $secondary: #fbff22 !default; // *custom
 $success: $green !default;
 $info: $cyan !default;
-$warning: $yellow !default;
+// $warning: $yellow !default;
+$warning: #c96464 !default; // *custom
 $danger: $red !default;
 // $light: $gray-100 !default;
 $light: #f3f1e5 !default; // *custom
-$dark: $gray-900 !default;
+$dark: $gray-900 !default; // *custom
+$dark-gray: #4f4f4f !default; // *custom
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -321,6 +323,7 @@ $theme-colors: (
   'danger': $danger,
   'light': $light,
   'dark': $dark,
+  'dark-gray': $dark-gray,
   'black': $black,
 ) !default;
 // scss-docs-end theme-colors-map
@@ -594,6 +597,8 @@ $font-sizes: (
   4: $h4-font-size,
   5: $h5-font-size,
   6: $h6-font-size,
+  7: $font-size-sm,
+  // *custom
 ) !default;
 // scss-docs-end font-sizes
 
@@ -897,8 +902,10 @@ $form-check-transition: null !default;
 
 $form-check-input-active-filter: brightness(90%) !default;
 
-$form-check-input-bg: $input-bg !default;
-$form-check-input-border: 1px solid rgba($black, 0.25) !default;
+$form-check-input-bg: $input-bg !default; // *custom
+// $form-check-input-bg: $input-bg !default;
+$form-check-input-border: 1px solid $primary !default; // *custom
+// $form-check-input-border: 1px solid rgba($black, 0.25) !default;
 $form-check-input-border-radius: 0.25em !default;
 $form-check-radio-border-radius: 50% !default;
 $form-check-input-focus-border: $input-focus-border-color !default;

@@ -37,6 +37,7 @@
     @include media-breakpoint-up(md) {
       min-width: 48px;
       min-height: 48px;
+      font-size: 20px;
     }
     &.active {
       background-color: $primary;
