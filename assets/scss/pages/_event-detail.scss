@@ -1,0 +1,44 @@
+.event-detail {
+  .year,
+  .date {
+    font-size: 24px;
+    line-height: 28px;
+    @include media-breakpoint-up(md) {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+  .time {
+    font-size: 24px;
+    line-height: 28px;
+    @include media-breakpoint-up(md) {
+      font-size: 32px;
+      line-height: 37px;
+    }
+  }
+  .divider {
+    width: 2px;
+    height: 100%;
+    background-color: #000;
+    transform: rotate(30deg);
+    @include media-breakpoint-up(lg) {
+      height: 30%;
+    }
+  }
+  .title {
+    font-size: 32px;
+    line-height: 46px;
+    @include media-breakpoint-up(md) {
+      font-size: 60px;
+      line-height: 86px;
+    }
+  }
+  .slogan {
+    @include media-breakpoint-up(md) {
+      font-size: 22px;
+    }
+  }
+  .table-text {
+    font-size: 14px;
+  }
+}

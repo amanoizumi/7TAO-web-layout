@@ -59,10 +59,13 @@
 @import './components/title';
 @import './components/eventcard';
 @import './components/pagination';
+@import './components/stepprogress';
 
 @import './layout/header';
 @import './layout/footer';
 
 @import './pages/index';
+@import './pages/event-detail';
+@import './pages/checkorder';
 
 // @import '../node_modules/bootstrap/scss/bootstrap';

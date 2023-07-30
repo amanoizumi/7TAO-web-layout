@@ -695,8 +695,10 @@ $table-hover-bg-factor: 0.075 !default;
 $table-hover-bg: rgba($black, $table-hover-bg-factor) !default;
 
 $table-border-factor: 0.1 !default;
-$table-border-width: $border-width !default;
-$table-border-color: var(--#{$prefix}border-color) !default;
+$table-border-width: 1px !default; // *custom
+// $table-border-width: $border-width !default;
+$table-border-color: $primary !default; // *custom
+// $table-border-color: var(--#{$prefix}border-color) !default;
 
 $table-striped-order: odd !default;
 $table-striped-columns-order: even !default;

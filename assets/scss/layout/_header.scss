@@ -40,11 +40,11 @@
     top: 66px;
     left: 0;
     right: 0;
-
+    z-index: 10;
     @include media-breakpoint-up(md) {
       top: 105px;
     }
-    
+
     .navbar-collapse {
       @include media-breakpoint-up(lg) {
         border-bottom: 0;
