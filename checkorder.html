@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>訂單確認</title>
+    <script type="module" crossorigin src="/7TAO-web-layout/assets/main-37bb4132.js"></script>
+    <link rel="stylesheet" href="/7TAO-web-layout/assets/main-3e5bc07f.css">
+  </head>
+  <body>
+    <header class="py-3 py-md-6 border-primary border-bottom position-relative">
+  <div class="container d-flex justify-content-between align-items-center justify-content-lg-start">
+    <!-- logo -->
+    <a href="index.html" class="d-flex me-6 me-lg-12">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg==" class="header-logo me-md-4" alt="logo" />
+      <h1 class="d-none d-md-flex align-items-center">
+        7TAO
+        <span class="fs-6 ms-1 serif">活動訂票網</span>
+      </h1>
+    </a>
+
+    <!-- input -->
+    <div class="header-btn-group btn-group me-lg-auto">
+      <input
+        type="text"
+        class="form-control header-search"
+        placeholder="探索活動"
+        aria-label="Input group example"
+        aria-describedby="btnGroupAddon"
+      />
+      <button
+        type="button"
+        class="btn btn-primary header-search-btn d-flex justify-content-center align-items-center"
+      >
+        <i class="icofont-search-1"></i>
+      </button>
+    </div>
+
+    <!-- hamburger btn -->
+    <nav>
+      <button
+        class="hamburger-btn d-flex rounded justify-content-center align-items-center border border-1 border-primary ms-6 bg-transparent d-lg-none flex-column"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseNavbar"
+        aria-controls="collapseNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="hamburger-icon-line bg-black"></span>
+        <span class="hamburger-icon-line bg-black"></span>
+        <span class="hamburger-icon-line bg-black"></span>
+      </button>
+
+      <!-- navbar toggle -->
+      <div class="navbar-custom position-absolute position-lg-static bg-light">
+        <ul
+          class="d-lg-flex collapse list-unstyled mb-0 navbar-collapse border-bottom border-primary border-bottom-lg-0"
+          id="collapseNavbar"
+        >
+          <li class="me-lg-6">
+            <a
+              href="#"
+              id="registerLink"
+              class="navbar-link-custom d-block py-4"
+              data-bs-toggle="modal" data-bs-target="#register"
+            >
+              <div class="container px-lg-0"><i class="icofont-ui-file me-1"></i>REGISTER</div>
+            </a>
+          </li>
+          <li>
+            <a href="login.html" class="navbar-link-custom d-block py-4">
+              <div class="container px-lg-0"><i class="icofont-ui-user me-1"></i>LOGIN</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="modal fade" id="register" tabindex="-1" aria-labelledby="registerLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-0 text-center">
+      <div class="modal-header d-block position-relative border-bottom border-3 border-primary">
+        <h5 class="modal-title" id="registerLabel">立刻成為7TAO會員</h5>
+        <button type="button" class="btn-close position-absolute top-0 end-0 m-3 p-0" data-bs-dismiss="modal"
+          aria-label="Close"></button>
+      </div>
+      <div class="modal-body pt-md-6">
+        立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。<br>
+        您也可以先報名活動，日後再註冊帳號，<br>
+        系統會在認證您的Email後，協助您找回舊的訂單。
+      </div>
+      <div class="modal-footer border-0 pb-md-6">
+        <a href="#" class="btn btn-primary text-secondary rounded-0 mx-auto px-5 py-2">立即成為會員</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const registerLink = document.querySelector('#registerLink');
+
+  registerLink.addEventListener('click', (e) => {
+    e.preventDefault();
+  });
+</script>
+    <main class="checkorder">
+      <div class="container pt-6 pb-12 py-md-15">
+        <div class="row">
+          <div class="col-12 col-lg-6 mx-lg-auto">
+            <!-- 進度條 -->
+            <ol class="list-unstyled stepprogress mb-6 mb-md-12">
+              <li class="stepprogress-item">
+                <div class="stepprogress-number active">1</div>
+                <p class="serif">訂單確認</p>
+              </li>
+              <li class="stepprogress-item">
+                <div class="stepprogress-number">2</div>
+                <p class="serif">結帳付款</p>
+              </li>
+              <li class="stepprogress-item">
+                <div class="stepprogress-number">3</div>
+                <p class="serif">訂購結果</p>
+              </li>
+            </ol>
+            <!-- 結帳內容 -->
+            <h2 class="title serif mb-6 text-lg-center">返老還童-制服聯誼</h2>
+            <table class="table table-hover border-2 border-top border-primary mb-8">
+              <tbody>
+                <tr>
+                  <th class="serif">日期</th>
+                  <td class="text-end sans">日期 2023/5/12</td>
+                </tr>
+                <tr>
+                  <th class="serif">票種</th>
+                  <td class="text-end sans">改頭換面票（含大改造）</td>
+                </tr>
+                <tr>
+                  <th class="serif">票價</th>
+                  <td class="text-end sans">$8000</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 class="serif d-flex flex-column align-items-center form-title mb-4">
+              <img class="sparkler mb-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANgSURBVHgB7ZvdddpAEIUHBM+og2w6UAm4EzqIO4g7cDrAHTgdkA6wK0AdGL/xACh38K7OsJHE2hHMSvCds0cSEovmzuzfSBDdUCW1RY0h6ZKhGFJEVYAkSQxKRoqMSJGiKAwpNwFVAQaDAXv/jRRRFQBMEAXfSBFtAQyigK4WdIAFF1JEcxSQnZ8hJTQFMBQBUUTAaDQypISaADwJcvt2PqCCmgAwOq3avzSxdII3AUiJKATAZGhCSqgJAKNVF0GO1gRArz6jz43t0uuGwpna32qF1gSAR3Pc2Go4HP6k85Ch/gWX3W73h2LE3iDP71d0wquY/CzdWsBeXwtE/eGuxfceKFbG43EmjHprClU2OkCAVIhaQIgVxQ5u8l4YVtQ1iQABjLwG9XDixFAXkF6zYftYcU2TAMY7X7TZ8V2ClMPVM2AuL7BNpGwu4tQ/xkfd7hswFSIs3Envc5cUqTL+F3UYUxcJVQLA2Bfv8yfqAZUi+AKgPNdFSx9gEZYVRteVJ+ojFV6uKnO6IKE5aSO27M3DQ03eIpkxkdf42R276PnqwmeN+tbyGPW547U9ft/v94d9u83tObdtxAmQWgMydEQZG4XCT21S/IChDgM7cl6n0IeYrxCJ97m88GflYgiG87STrIqpULrz2JTbmiOWbcSUvbQttAmk+JLhijjEbYWyCZRh7s7J73517W/D/8gR1ptMbo/LJsBO4/Nw5uHcZrPJKSa4dw/oBJ+pjyBa5qHDIA+Z1JWFTwj+4qhmOPSj42ROoRP4nscx976VU+HeiQBjHz3jS4OqBLCfL3ohAidC6oxnkvrlcF0kRJFFDgI3PGsy3l6z8gw8gpfBXV0cGendKuOZJCAnyIkQT8h7ih3PMPZaGnDdqqG+mRSUE68UK7Ld40YbvZUcJzyXJ6qWOYVom4IRN3jSS15vH2SUaxLYTqkl2nw0NsU8/A5Pbe7oY6XVOtvt9gH1f9d8oaI1ENJyqPtNSmi/LO1Qe1tUU4BymYuQficlohCAAlJX5+ImACkhU26a6Tc1ATCc5W5fpLkujmYTyN0Oxver7AMkOV0jfjJEA+0/TOSkjPZ/hvxHXxdHtQ/AA41XbNRmgYx2E+AIyEkR7SZwlmXzZ0hIEXifR4KNfWJ7lfzPuwM32uAvhWS8ZdBSZJIAAAAASUVORK5CYII=" alt="icon" />
+              聯絡人資料
+            </h3>
+            <form>
+              <div class="d-flex flex-column gap-4 mb-md-8 mb-6">
+                <div>
+                  <label for="contact-name" class="form-label">聯絡人姓名</label>
+                  <input
+                    type="text"
+                    class="form-control fs-5"
+                    id="contact-name"
+                    placeholder="請輸入聯絡人名稱"
+                    aria-describedby="contactName"
+                  />
+                </div>
+                <div>
+                  <label for="contact-email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control fs-5"
+                    id="contact-email"
+                    placeholder="請輸入Email"
+                    aria-describedby="contactEmail"
+                  />
+                </div>
+                <div>
+                  <label for="contact-tel" class="form-label">手機</label>
+                  <input
+                    type="tel"
+                    class="form-control fs-5"
+                    id="contact-tel"
+                    placeholder="請輸入手機號碼"
+                    aria-describedby="contacTel"
+                  />
+                </div>
+              </div>
+              <a
+                href="payment.html"
+                class="mx-lg-auto col-lg-8 btn btn-primary d-flex align-items-center text-center justify-content-center fs-5"
+              >
+                確認表單資料<i class="icofont-double-right fw-bold ms-1 fs-7"></i>
+              </a>
+            </form>
+            <div class="text-center mt-4">
+              <a href="index.html" class="fs-5 text-black-50">取消購票</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer py-6 border-top border-3 border-primary">
+  <p class="sans text-center">© 7TAO七逃. All Rights Reserved</p>
+</footer>
+
+    
+  </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>結帳完成</title>
+    <script type="module" crossorigin src="/7TAO-web-layout/assets/main-37bb4132.js"></script>
+    <link rel="stylesheet" href="/7TAO-web-layout/assets/main-3e5bc07f.css">
+  </head>
+  <body>
+    <header class="py-3 py-md-6 border-primary border-bottom position-relative">
+  <div class="container d-flex justify-content-between align-items-center justify-content-lg-start">
+    <!-- logo -->
+    <a href="index.html" class="d-flex me-6 me-lg-12">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg==" class="header-logo me-md-4" alt="logo" />
+      <h1 class="d-none d-md-flex align-items-center">
+        7TAO
+        <span class="fs-6 ms-1 serif">活動訂票網</span>
+      </h1>
+    </a>
+
+    <!-- input -->
+    <div class="header-btn-group btn-group me-lg-auto">
+      <input
+        type="text"
+        class="form-control header-search"
+        placeholder="探索活動"
+        aria-label="Input group example"
+        aria-describedby="btnGroupAddon"
+      />
+      <button
+        type="button"
+        class="btn btn-primary header-search-btn d-flex justify-content-center align-items-center"
+      >
+        <i class="icofont-search-1"></i>
+      </button>
+    </div>
+
+    <!-- hamburger btn -->
+    <nav>
+      <button
+        class="hamburger-btn d-flex rounded justify-content-center align-items-center border border-1 border-primary ms-6 bg-transparent d-lg-none flex-column"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseNavbar"
+        aria-controls="collapseNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="hamburger-icon-line bg-black"></span>
+        <span class="hamburger-icon-line bg-black"></span>
+        <span class="hamburger-icon-line bg-black"></span>
+      </button>
+
+      <!-- navbar toggle -->
+      <div class="navbar-custom position-absolute position-lg-static bg-light">
+        <ul
+          class="d-lg-flex collapse list-unstyled mb-0 navbar-collapse border-bottom border-primary border-bottom-lg-0"
+          id="collapseNavbar"
+        >
+          <li class="me-lg-6">
+            <a
+              href="#"
+              id="registerLink"
+              class="navbar-link-custom d-block py-4"
+              data-bs-toggle="modal" data-bs-target="#register"
+            >
+              <div class="container px-lg-0"><i class="icofont-ui-file me-1"></i>REGISTER</div>
+            </a>
+          </li>
+          <li>
+            <a href="login.html" class="navbar-link-custom d-block py-4">
+              <div class="container px-lg-0"><i class="icofont-ui-user me-1"></i>LOGIN</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="modal fade" id="register" tabindex="-1" aria-labelledby="registerLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-0 text-center">
+      <div class="modal-header d-block position-relative border-bottom border-3 border-primary">
+        <h5 class="modal-title" id="registerLabel">立刻成為7TAO會員</h5>
+        <button type="button" class="btn-close position-absolute top-0 end-0 m-3 p-0" data-bs-dismiss="modal"
+          aria-label="Close"></button>
+      </div>
+      <div class="modal-body pt-md-6">
+        立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。<br>
+        您也可以先報名活動，日後再註冊帳號，<br>
+        系統會在認證您的Email後，協助您找回舊的訂單。
+      </div>
+      <div class="modal-footer border-0 pb-md-6">
+        <a href="#" class="btn btn-primary text-secondary rounded-0 mx-auto px-5 py-2">立即成為會員</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const registerLink = document.querySelector('#registerLink');
+
+  registerLink.addEventListener('click', (e) => {
+    e.preventDefault();
+  });
+</script>
+    <main class="payment-success">
+      <div class="container pt-6 pb-12 py-md-15">
+        <div class="row">
+          <div class="col-12 col-lg-6 mx-lg-auto">
+            <!-- 進度條 -->
+            <ol class="list-unstyled stepprogress mb-8 mb-md-12">
+              <li class="stepprogress-item">
+                <div class="stepprogress-number active">
+                  <i class="icofont-verification-check"></i>
+                </div>
+                <p class="serif">訂單確認</p>
+              </li>
+              <li class="stepprogress-item">
+                <div class="stepprogress-number active">
+                  <i class="icofont-verification-check"></i>
+                </div>
+                <p class="serif">結帳付款</p>
+              </li>
+              <li class="stepprogress-item">
+                <div class="stepprogress-number active">3</div>
+                <p class="serif">訂購結果</p>
+              </li>
+            </ol>
+            <!-- 訂單內容 -->
+            <h2 class="d-flex flex-column align-items-center title serif mb-8 text-lg-center">
+              <i class="success-icon icofont-check-circled mb-4"></i>訂購成功
+            </h2>
+
+            <table class="table table-hover border-2 border-top border-primary mb-md-2 mb-4">
+              <tbody>
+                <tr>
+                  <th class="serif py-2">訂單編號</th>
+                  <td class="text-end sans py-2">892746123</td>
+                </tr>
+                <tr>
+                  <th class="serif py-2">訂購時間</th>
+                  <td class="text-end sans py-2">2023/04/28 14:30</td>
+                </tr>
+                <tr>
+                  <th class="serif py-2">票券</th>
+                  <td class="text-end sans py-2">改頭換面票（含大改造）$8000</td>
+                </tr>
+                <tr>
+                  <th class="serif py-2">取票序號</th>
+                  <td class="text-warning text-end sans py-2">95G54J4434</td>
+                </tr>
+                <tr>
+                  <th class="serif py-2">取票號碼</th>
+                  <td class="text-warning text-end sans py-2">04597101</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- 說明 -->
+            <p class="text-dark-gray sans">
+              請至 7-Eleven 完成取票，請於 ibon
+              點選【購票/取票/訂房】>【售票系統】>【取票】>【拓元售票系統】。<br/>
+              若您未前往取票，本筆交易仍視為完成，不可取消訂單。<br/>若需退票，請按照退票辦法進行申請。
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer py-6 border-top border-3 border-primary">
+  <p class="sans text-center">© 7TAO七逃. All Rights Reserved</p>
+</footer>
+
+    
+  </body>
+</html>

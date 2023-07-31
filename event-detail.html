@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>活動詳情</title>
+    <script type="module" crossorigin src="/7TAO-web-layout/assets/main-37bb4132.js"></script>
+    <link rel="stylesheet" href="/7TAO-web-layout/assets/main-3e5bc07f.css">
+  </head>
+  <body>
+    <header class="py-3 py-md-6 border-primary border-bottom position-relative">
+  <div class="container d-flex justify-content-between align-items-center justify-content-lg-start">
+    <!-- logo -->
+    <a href="index.html" class="d-flex me-6 me-lg-12">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg==" class="header-logo me-md-4" alt="logo" />
+      <h1 class="d-none d-md-flex align-items-center">
+        7TAO
+        <span class="fs-6 ms-1 serif">活動訂票網</span>
+      </h1>
+    </a>
+
+    <!-- input -->
+    <div class="header-btn-group btn-group me-lg-auto">
+      <input
+        type="text"
+        class="form-control header-search"
+        placeholder="探索活動"
+        aria-label="Input group example"
+        aria-describedby="btnGroupAddon"
+      />
+      <button
+        type="button"
+        class="btn btn-primary header-search-btn d-flex justify-content-center align-items-center"
+      >
+        <i class="icofont-search-1"></i>
+      </button>
+    </div>
+
+    <!-- hamburger btn -->
+    <nav>
+      <button
+        class="hamburger-btn d-flex rounded justify-content-center align-items-center border border-1 border-primary ms-6 bg-transparent d-lg-none flex-column"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseNavbar"
+        aria-controls="collapseNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="hamburger-icon-line bg-black"></span>
+        <span class="hamburger-icon-line bg-black"></span>
+        <span class="hamburger-icon-line bg-black"></span>
+      </button>
+
+      <!-- navbar toggle -->
+      <div class="navbar-custom position-absolute position-lg-static bg-light">
+        <ul
+          class="d-lg-flex collapse list-unstyled mb-0 navbar-collapse border-bottom border-primary border-bottom-lg-0"
+          id="collapseNavbar"
+        >
+          <li class="me-lg-6">
+            <a
+              href="#"
+              id="registerLink"
+              class="navbar-link-custom d-block py-4"
+              data-bs-toggle="modal" data-bs-target="#register"
+            >
+              <div class="container px-lg-0"><i class="icofont-ui-file me-1"></i>REGISTER</div>
+            </a>
+          </li>
+          <li>
+            <a href="login.html" class="navbar-link-custom d-block py-4">
+              <div class="container px-lg-0"><i class="icofont-ui-user me-1"></i>LOGIN</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="modal fade" id="register" tabindex="-1" aria-labelledby="registerLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-0 text-center">
+      <div class="modal-header d-block position-relative border-bottom border-3 border-primary">
+        <h5 class="modal-title" id="registerLabel">立刻成為7TAO會員</h5>
+        <button type="button" class="btn-close position-absolute top-0 end-0 m-3 p-0" data-bs-dismiss="modal"
+          aria-label="Close"></button>
+      </div>
+      <div class="modal-body pt-md-6">
+        立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。<br>
+        您也可以先報名活動，日後再註冊帳號，<br>
+        系統會在認證您的Email後，協助您找回舊的訂單。
+      </div>
+      <div class="modal-footer border-0 pb-md-6">
+        <a href="#" class="btn btn-primary text-secondary rounded-0 mx-auto px-5 py-2">立即成為會員</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const registerLink = document.querySelector('#registerLink');
+
+  registerLink.addEventListener('click', (e) => {
+    e.preventDefault();
+  });
+</script>
+    <main class="mt-4 mt-md-8 event-detail">
+      <div class="container">
+        <div class="row mb-6">
+          <!-- 大圖片 -->
+          <div class="col-12 col-lg-10 mb-2 mb-lg-0">
+            <div class="border border-2 border-primary p-3">
+              <img class="w-100" src="/7TAO-web-layout/assets/09-496f8f1c.jpg" alt="返老還童-制服聯誼 視覺圖" />
+            </div>
+          </div>
+          <!-- 時間 -->
+          <div class="col-12 col-lg-2 d-flex flex-lg-column">
+            <div
+              class="col-4 col-lg-12 border border-2 border-primary d-flex align-items-center justify-content-center me-2 me-lg-0 mb-lg-6"
+            >
+              <p class="text-center year">2023</p>
+            </div>
+            <div
+              class="flex-lg-grow-1 col col-lg-12 border border-2 border-primary py-3 px-6 d-flex justify-content-between align-items-center flex-lg-column"
+            >
+              <p class="date text-center">MAY <br />19</p>
+              <div class="divider mb-lg-4"></div>
+              <div class="time d-flex flex-column align-items-center">
+                <p>12:00</p>
+                <span>｜</span>
+                <p>20:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 細節介紹 -->
+        <div class="row mb-6 mb-md-12">
+          <div class="col-12 mb-6">
+            <h2 class="title serif mb-2">返老還童-制服聯誼</h2>
+            <p class="slogan">穿上制服，無年齡限制，一起走上街頭、尋找青春才有的純愛心動！</p>
+          </div>
+          <ul class="d-none d-md-flex tag-list list-unstyled d-flex serif mb-1 mb-md-12">
+            <li class="me-2">
+              <a href="event.html" class="tag-item btn btn-outline-black py-1 px-4 px-md-6">聯誼</a>
+            </li>
+            <li class="me-2">
+              <a href="event.html" class="tag-item btn btn-outline-black py-1 px-4 px-md-6">美食</a>
+            </li>
+            <li class="me-2">
+              <a href="event.html" class="tag-item btn btn-outline-black py-1 px-4 px-md-6">戶外</a>
+            </li>
+            <li class="me-2">
+              <a href="event.html" class="tag-item btn btn-outline-black py-1 px-4 px-md-6">交通旅遊</a>
+            </li>
+          </ul>
+          <div class="col-12">
+            <div class="border border-2 border-primary p-4 p-md-8">
+              <p class="mb-4">想回到過去？試著讓故事繼續？</p>
+              <p class="mb-4">
+                由戀愛家教「艾德溫」主辦策劃，讓各位在安排好的青春行程中擁有自然的純愛互動體驗，互相餵食餅乾、觀察對方手相，有趣的互動環節讓你/妳怦然心動！制服由主辦方提供，妝髮造型可額外加價購！
+              </p>
+              <p>
+                活動中全程會有隨行攝影師，捕捉你們的純愛互動，拍攝成實境電視劇，讓你們能留下永恆的美好回憶
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 購票資訊 -->
+        <div
+          class="d-flex justify-content-between align-items-center border border-2 border-md-3 border-primary mb-2 mb-md-0 py-4 px-3 py-md-6 px-md-8"
+        >
+          <h2 class="title-en">TICKET</h2>
+          <p class="serif title-tw fw-bold">購票資訊</p>
+        </div>
+
+        <!-- 購票表格 -->
+        <table class="table table-hover sans align-middle mb-12">
+          <thead class="serif border-bottom border-2 border-primary">
+            <tr>
+              <th class="w-25 py-lg-4">活動日期</th>
+              <th class="w-25 py-lg-4">票種</th>
+              <th class="w-25 py-lg-4 text-end">票價</th>
+              <th class="w-25 py-lg-4 text-center">購票</th>
+            </tr>
+          </thead>
+          <tbody class="table-text">
+            <tr>
+              <td scope="row">2023/5/12</td>
+              <td>普通票</td>
+              <td class="text-end">$600</td>
+              <td class="text-center">
+                <a href="#" class="btn btn-outline-primary border border-primary border-1 serif px-3"
+                  ><span class="d-none d-md-inline">立即</span>購票</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">2023/5/12</td>
+              <td>改頭換面票（含大改造）</td>
+              <td class="text-end">$3600</td>
+              <td class="text-center">
+                <a href="#" class="btn btn-outline-primary border border-primary border-1 serif px-3"
+                  ><span class="d-none d-md-inline">立即</span>購票</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">2023/5/12</td>
+              <td>必勝票（含戀愛小抄）</td>
+              <td class="text-end">$8000</td>
+              <td class="text-center">
+                <a href="#" class="btn btn-outline-primary border border-primary border-1 serif px-3"
+                  ><span class="d-none d-md-inline">立即</span>購票</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer class="footer py-6 border-top border-3 border-primary">
+  <p class="sans text-center">© 7TAO七逃. All Rights Reserved</p>
+</footer>
+
+    
+  </body>
+</html>
