@@ -53,6 +53,7 @@
 @import './utils/fonts';
 @import './base/base';
 
+// Custom components
 @import './components/btn';
 @import './components/tag';
 @import './components/marqee';
@@ -60,6 +61,9 @@
 @import './components/eventcard';
 @import './components/pagination';
 @import './components/stepprogress';
+
+// Vendors
+@import './vendors/icofont/icofont.min.css';
 
 @import './layout/header';
 @import './layout/footer';
@@ -69,4 +73,3 @@
 @import './pages/checkorder';
 @import './pages/payment-success';
 
-// @import '../node_modules/bootstrap/scss/bootstrap';
