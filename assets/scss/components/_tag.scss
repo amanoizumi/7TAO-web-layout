@@ -2,7 +2,7 @@
   .tag-item {
     border-left: 4px solid $black;
     position: relative;
-    &:hover {
+    &:hover, &:active, &.active {
       color: $white;
       &::before {
         position: absolute;
