@@ -15,6 +15,14 @@ $utilities: (
       justify: justify,
     ),
   ),
+  "border": (
+    responsive: true,
+    property: border,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+      0: 0,
+    )
+  ),
   'border-end': (
     responsive: true,
     property: border-right,
